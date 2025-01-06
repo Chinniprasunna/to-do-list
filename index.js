@@ -16,11 +16,20 @@ function addTask(){
     saveData();
 }
 
+// function clearAllTasks() {
+//     localStorage.clear(); // Clears all data in localStorage
+//     listContainer.innerHTML = ''; // Clears the task list from the UI
+//     alert("All tasks have been cleared!");
+// }
+
+
+
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
         saveData();
     }else if(e.target.tagName === "SPAN"){
+        console.log("Removing task:", e.target.parentElement.textContent.trim());
         e.target.parentElement.remove();
         saveData();
     }

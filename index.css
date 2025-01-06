@@ -9,7 +9,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(106, 102, 157);
+    background: rgb(153, 124, 112);
     padding: 10px;
 }
 
@@ -59,7 +59,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: rgb(142, 180, 134);
     font-size: 16px;
     color:#fff;
     cursor: pointer;
@@ -95,23 +95,27 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image:url(images/done.png) ;
+    background-image:url(images/done1.png) ;
     
 }
 
-ul li span{
-    position:absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
+ul li span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
     text-align: center;
+    background: rgb(142, 180, 134);
     border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-ul li span:hover{
-    background: #edeef0;
+ul li span:hover {
+    background: rgb(142, 180, 134);
 }
